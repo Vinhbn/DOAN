@@ -1,0 +1,5 @@
+[splunk]
+192.168.136.136 ansible_user=vinh1 ansible_password=12345
+
+[agent]
+IP ansible_user=vinh2 ansible_password=23456
