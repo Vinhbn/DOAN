@@ -1,0 +1,22 @@
+---
+- name: test
+  hosts: splunk
+  tasks:
+
+  # - name: testing
+  #   ansible.builtin.command: systemctl daemon-reload
+  #   register: output
+  #   become: true
+
+  # - name: output
+  #   ansible.builtin.debug:
+  #     var: output.stdout_lines
+    - name: cat a file 
+      ansible.builtin.command:
+        cat /home/vinh1/hello.txt
+      register: test
+    
+    - name: output
+      ansible.builtin.debug:
+        var: test.stdout_lines
+      

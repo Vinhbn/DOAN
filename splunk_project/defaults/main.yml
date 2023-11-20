@@ -22,4 +22,4 @@ splunk_tgz_checksum: 10cf541607feb6171725c2d17b7fadf9
 
 default_admin_cred: /home/vinh/Desktop/code/splunk_project/templates/user-seed.conf.j2
 
-install_method: systemd
+install_method: initd
