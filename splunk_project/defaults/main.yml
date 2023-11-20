@@ -1,2 +1,25 @@
 ---
 # defaults file for splunk_project
+splunk_user: admin
+splunk_pass: splunk123
+
+#download (wget) the tgz installer from Splunk 
+download_tgz_from_splunk_servers: true
+
+# User and group 
+os_user: splunker
+os_group: splunker
+
+# $SPLUNK_HOME path
+splunk_home: /opt/splunk
+splunk_base_path: /opt
+
+# check_for_updates: true
+#select version
+splunk_version: 9.0.2
+splunk_tgz: splunk-9.0.2-17e00c557dc1-Linux-x86_64.tgz
+splunk_tgz_checksum: 10cf541607feb6171725c2d17b7fadf9
+
+default_admin_cred: /home/vinh/Desktop/code/splunk_project/templates/user-seed.conf.j2
+
+install_method: systemd
